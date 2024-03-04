@@ -8,7 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 
 public class BookService implements BookRepository {
-    HashMap<Integer, Book> hmap = new HashMap<>();
+    private HashMap<Integer, Book> hmap = new HashMap<>();
 
     public BookService() {
         Book b1 = new Book(1, "Harry Porter", "harry_porter.jpg");
